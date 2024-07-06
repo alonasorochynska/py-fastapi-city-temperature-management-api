@@ -11,4 +11,4 @@ app.include_router(temperature_router.router)
 
 @app.get("/")
 def root() -> dict:
-    return {"message": "City Temperature API"}
+    return {"message": "City Temperature Management API"}

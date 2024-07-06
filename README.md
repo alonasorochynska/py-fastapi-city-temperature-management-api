@@ -27,14 +27,19 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Set up the database:
 
-Make sure your database settings (DATABASE_URL) are correctly configured in database.py.
-
-### 5. Run migrations with Alembic to set up the database schema:
+### 4. Run migrations with Alembic to set up the database schema:
 
 ```shell
 alembic upgrade head
+```
+
+### 5. Configure environment variables:
+
+```shell
+WEATHER_API_URL=https://api.weatherapi.com/v1/current.json
+WEATHER_API_KEY=your_weather_api_key
+DB_URL=db_url_from_your_settings
 ```
 
 ## Usage
